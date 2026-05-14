@@ -200,6 +200,14 @@ Edit `supplemental-ui/js/vendor/reading-time.js`, line 4:
 var WPM = 200  // Words per minute, adjust as needed
 ```
 
+### Disable Reading Time Feature
+
+If you prefer not to display time estimates on your pages, you can remove the feature entirely while keeping the progress tracker active:
+
+1. **Remove the JS**: Open `supplemental-ui/partials/footer-scripts.hbs` and delete or comment out the following line:
+   ```handlebars
+   <script src="{{{uiRootPath}}}/js/vendor/reading-time.js"></script>
+
 ## Uninstallation
 
 To remove the progress tracker:
