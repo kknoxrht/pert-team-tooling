@@ -7,6 +7,7 @@
 - ✅ Visual progress indicators (green checkmarks) in navigation
 - 💾 Persistent progress tracking via browser localStorage
 - 📱 Works across sessions and browser restarts
+- ⏱️ Includes reading time estimates for each page
 - 🎨 Tab and collapsible section support
 - 🔄 Easy reset functionality
 - 🌐 **NEW in v1.1:** GitHub Pages compatibility with automatic URL path handling
@@ -84,8 +85,10 @@ Open your browser to the local server (usually http://localhost:8080 or http://l
 
 ### Vendor Files
 - `supplemental-ui/js/vendor/tabs.js` - Tab functionality
+- `supplemental-ui/js/vendor/reading-time.js` - Reading time calculator
 - `supplemental-ui/css/vendor/tabs.css` - Tab styles
 - `supplemental-ui/css/vendor/collapsible.css` - Collapsible section styles
+- `supplemental-ui/css/vendor/reading-time.css` - Reading time display styles
 
 ### Handlebars Templates
 - `supplemental-ui/partials/nav-tree.hbs` - Navigation with progress tracking
@@ -100,7 +103,8 @@ Open your browser to the local server (usually http://localhost:8080 or http://l
 Once installed, the progress tracker works automatically:
 
 1. **View Progress**: Green checkmarks (✓) appear next to pages you've visited
-2. **Persist Progress**: Your progress is saved even if you close the browser
+2. **Track Reading Time**: Each page shows estimated reading time below the title
+3. **Persist Progress**: Your progress is saved even if you close the browser
 
 ### Reset Progress
 
@@ -186,6 +190,14 @@ Edit `supplemental-ui/partials/nav-tree.hbs`, line 14:
 ```handlebars
 <span class="nav-progress-mark" aria-hidden="true">✓</span>
 <!-- Change ✓ to ✔, ●, or any symbol you prefer -->
+```
+
+### Adjust Reading Time Speed
+
+Edit `supplemental-ui/js/vendor/reading-time.js`, line 4:
+
+```javascript
+var WPM = 200  // Words per minute, adjust as needed
 ```
 
 ## Uninstallation

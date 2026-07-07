@@ -17,10 +17,12 @@ const FILE_MAPPINGS = {
 
   // Vendor JavaScript files
   'supplemental-ui/js/vendor/tabs.js': 'supplemental-ui/js/vendor/tabs.js',
+  'supplemental-ui/js/vendor/reading-time.js': 'supplemental-ui/js/vendor/reading-time.js',
 
   // Vendor CSS files
   'supplemental-ui/css/vendor/tabs.css': 'supplemental-ui/css/vendor/tabs.css',
   'supplemental-ui/css/vendor/collapsible.css': 'supplemental-ui/css/vendor/collapsible.css',
+  'supplemental-ui/css/vendor/reading-time.css': 'supplemental-ui/css/vendor/reading-time.css',
 
   // Handlebars partials
   'supplemental-ui/partials/nav-tree.hbs': 'supplemental-ui/partials/nav-tree.hbs',

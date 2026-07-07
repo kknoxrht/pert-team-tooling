@@ -4,7 +4,7 @@ The course navigation includes a visual progress tracking feature that helps you
 
 == How It Works
 
-As you navigate through the course, a checkmark (✓) appears next to each page you've visited in the navigation sidebar. Your progress is saved in your browser's local storage, so it persists across sessions.
+As you navigate through the course, a checkmark (✓) appears next to each page you've visited in the navigation sidebar. This progress is saved in your browser's local storage, so it persists across sessions.
 
 [NOTE]
 ====
